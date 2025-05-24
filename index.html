@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff0f6;
+      color: #5a2a57;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #portfolio-container {
+      background: #ffffff;
+      max-width: 700px;
+      width: 100%;
+      padding: 40px 35px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(218, 112, 214, 0.2);
+      text-align: center;
+    }
+
+    /* Shortcut link (raccourci) */
+    #shortcut {
+      margin-bottom: 20px;
+    }
+
+    #shortcut a {
+      color: #a63d79;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    #shortcut a:hover {
+      color: #c95ca6;
+      text-decoration: underline;
+    }
+
+    #intro {
+      margin-bottom: 40px;
+    }
+    #intro h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3em;
+      font-weight: 700;
+      color: #a63d79;
+      letter-spacing: 1.5px;
+    }
+    #intro p {
+      font-size: 1.2rem;
+      color: #7d4a80;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+      font-style: italic;
+    }
+
+    #skills h2 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5em;
+      color: #c95ca6;
+      font-weight: 700;
+      letter-spacing: 2px;
+      border-bottom: 3px solid #d483b8;
+      padding-bottom: 8px;
+      text-align: left;
+    }
+
+    #skills h3 {
+      font-size: 1.4rem;
+      margin-top: 2.5em;
+      margin-bottom: 1em;
+      color: #a63d79;
+      font-weight: 600;
+      border-left: 5px solid #d483b8;
+      padding-left: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    ul li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      cursor: default;
+      color: #7d4a80;
+      transition: color 0.3s ease;
+    }
+    ul li::before {
+      content: '🌸';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 1.2rem;
+      user-select: none;
+      color: #c95ca6;
+    }
+    ul li:hover {
+      color: #c95ca6;
+    }
+
+    #contact {
+      margin-top: 50px;
+      background: #f8d7e7;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(217, 112, 214, 0.15);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: #a63d79;
+    }
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    #contact p {
+      font-size: 1.1rem;
+      margin: 0.3em 0;
+    }
+    #contact a {
+      color: #a63d79;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    #contact a:hover {
+      color: #c95ca6;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      #portfolio-container {
+        padding: 30px 20px;
+      }
+      #intro h1 {
+        font-size: 2.2rem;
+      }
+      #skills h2 {
+        font-size: 2rem;
+      }
+      #skills h3 {
+        font-size: 1.2rem;
+      }
+      ul li {
+        font-size: 1rem;
+      }
+      #contact h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="portfolio-container" role="main">
+    
+    <!-- Raccourci link -->
+    <div id="shortcut">
+      <a href="#skills">➤ Go to Skills</a>
+    </div>
+
+    <section id="intro" aria-label="Introduction">
+      <h1>Hello, I'm Najwa a Digital Infrastructure Student</h1>
+      <p>
+        Passionate about technology and digital systems, I am an eager learner
+        building my expertise in IT infrastructure. With a mix of creativity
+        and analytical skills, I strive to contribute effectively to modern digital environments.
+      </p>
+    </section>
+
+    <section id="skills" aria-label="Skills Section">
+      <h2>Skills</h2>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Basic computer hardware knowledge (CPU, RAM, storage)</li>
+        <li>Installing and using Windows and Linux OS</li>
+        <li>Command line basics (PowerShell, Bash)</li>
+        <li>Networking fundamentals: IP addressing, routers, switches, protocols (TCP/IP, DHCP, DNS)</li>
+        <li>Setting up and managing small networks and servers</li>
+        <li>Introduction to virtualization (VirtualBox, VMware)</li>
+        <li>Basic cybersecurity principles and protection methods</li>
+        <li>Troubleshooting hardware and network issues</li>
+        <li>Basic knowledge of cloud computing concepts</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Problem-solving</li>
+        <li>Teamwork</li>
+        <li>Communication</li>
+        <li>Adaptability</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-label="Contact Information">
+      <h2>Contact Me</h2>
+      <p>Phone: <a href="tel:+212603395670">+212 603395670</a></p>
+      <p>Email: <a href="mailto:elouaddahnajwa@gmail.com">elouaddahnajwa@gmail.com</a></p>
+    </section>
+  </div>
+
+</body>
+</html>
